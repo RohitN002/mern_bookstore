@@ -39,7 +39,7 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-      .put(`https://mern-bookstore-q84l.onrender.com/${id}`, data)
+      .put(`https://mern-bookstore-q84l.onrender.com/books/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Book Edited successfully', { variant: 'success' });
